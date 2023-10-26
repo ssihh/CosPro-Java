@@ -1,3 +1,4 @@
+// 풀이참고: https://blog.naver.com/hyoun1202/222328639167
 // 다음과 같이 import를 사용할 수 있습니다.
 import java.util.*;
 
