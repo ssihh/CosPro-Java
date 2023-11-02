@@ -1,3 +1,4 @@
+// Math.min활용, arr범위를 사용한 차이값 max치 활용한 더 간단한 풀이
 // 다음과 같이 import를 사용할 수 있습니다.
 import java.util.*;
 
