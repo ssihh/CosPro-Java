@@ -3,7 +3,7 @@
 https://school.programmers.co.kr/learn/courses/11132/11132-cos-pro-1급-java-모의고사<br>
 <br>
 
-##형변환
+### 형변환
 Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
 str.charAt(i): String -> char<br>
