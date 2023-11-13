@@ -18,13 +18,11 @@ class Main {
 		else if(dir==2 && (b==0 || (b>0 && arr[a][b-1]!=0) )) dir++;
 		else if(dir==3 && (a>0 && arr[a-1][b]!=0) )dir=0;
 			
-		
 		//나아가는 방향
 		if(dir==0) b++; //->
 		else if(dir==1) a++; //아래
 		else if(dir==2) b--; //<-
 		else if(dir==3) a--; //위
-		
 	}
 	
 	for(int j=0;j<n;j++){
