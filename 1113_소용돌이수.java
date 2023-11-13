@@ -2,7 +2,7 @@
 import java.util.*;
 class Main {
     public int solution(int n) {
-						int[][] arr = new int[n][n];
+			int[][] arr = new int[n][n];
 			System.out.println(Arrays.toString(arr[0])); //배열선언하면 0이 디폴트값
 			int i = 0, j = 0;
 			int dir = 0; // dir : 0 → , dir : 1 ↓, dir : 2 ←, dir : 3 ↑
