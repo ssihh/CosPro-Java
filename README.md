@@ -12,7 +12,8 @@ str.charAt(i): String -> char<br>
 int[][] arr = new int[n][n];: 2차원 배열 선언. 양옆에 int[][], 모든 원소 값이 0으로 초기화되어있다.<br>
 arr.length: 배열 길이 <br>
 arr[i].length(): arr[i]에 있는 문자 길이. 마지막에 ()가 들어간다<br>
-Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자가 출력된다. 2차원배열출력: Arrays.toString(arr[0]) 한행씩 가능 <br>
+Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자가 출력된다. <br> 
+  2차원배열출력: Arrays.toString(arr[0]) 한행씩 가능 <br>
 Arrays.sort(arr): 배열정렬<br>
 
 
