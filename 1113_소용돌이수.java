@@ -5,7 +5,7 @@ class Main {
         
         int answer = 0;
 	int[][] arr = new int[n][n]; //2차원 배열 선언
- 	System.out.println(Arrays.toString(arr[0]));
+ 	// System.out.println(Arrays.toString(arr[0]));
 	int dir=0;
 	int a=0; int b=0;
 	
@@ -27,7 +27,7 @@ class Main {
 	
 	for(int j=0;j<n;j++){
 		answer+=arr[j][j];
-		System.out.println(Arrays.toString(arr[j]));
+		// System.out.println(Arrays.toString(arr[j]));
 	}
 			
         return answer;
