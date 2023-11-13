@@ -2,44 +2,37 @@
 import java.util.*;
 class Main {
     public int solution(int n) {
-			int[][] arr = new int[n][n];
-			System.out.println(Arrays.toString(arr[0])); //배열선언하면 0이 디폴트값
-			int i = 0, j = 0;
-			int dir = 0; // dir : 0 → , dir : 1 ↓, dir : 2 ←, dir : 3 ↑
-			int num = 1;
-
-			while(true) {
-				arr[i][j] = num; //arr[0][0]==1
-
-				//방향을 바꾸는 조건
-				if(dir == 0 && (j == n-1 || (j < n-1 && arr[i][j+1] != 0 )))
-					dir++; //0 → && 맨 우측상단 이거나|| 우측값이 0이 아닌경우
-				else if(dir == 1 && (i == n-1 || (i < n-1 && arr[i+1][j] != 0))) 
-					dir++; //1 ↓ && 맨 우측하단이거나
-				else if(dir == 2 && (j == 0 || (j > 0 && arr[i][j-1] != 0))) 
-					dir++; //2 ← && 맨 좌측하단
-				else if(dir == 3 && ((i > 0 && arr[i-1][j] != 0))) 
-					dir = 0; //3 ↑ && 
-
-				// 나아가는 방향
-				if(dir == 0) j++;
-				else if(dir == 1) i++;
-				else if(dir == 2) j--;
-				else if(dir == 3) i--;
-
-				if(num == n*n) break;
-				num++;
-			}
-
-			int answer = 0;
-			i = 0;
-
-			while(i <= n-1) {
-				answer += arr[i][i]; i++;
-			}
-
-			return answer;
-
+        
+        int answer = 0;
+	int[][] arr = new int[n][n]; //2차원 배열 선언
+ 	System.out.println(Arrays.toString(arr[0]));
+	int dir=0;
+	int a=0; int b=0;
+	
+	for(int i=1; i<=n*n; i++){
+		arr[a][b]=i; //값 저장
+		
+		//방향변경조건, !=0: 값이 있어서 막혀있을때 방향바꿈
+		if(dir==0 && (b==n-1 || (b<n-1 && arr[a][b+1]!=0) )) dir++;
+		else if(dir==1 && (a==n-1 || (a<n-1 && arr[a+1][b]!=0) )) dir++;
+		else if(dir==2 && (b==0 || (b>0 && arr[a][b-1]!=0) )) dir++;
+		else if(dir==3 && (a>0 && arr[a-1][b]!=0) )dir=0;
+			
+		
+		//나아가는 방향
+		if(dir==0) b++; //->
+		else if(dir==1) a++; //아래
+		else if(dir==2) b--; //<-
+		else if(dir==3) a--; //위
+		
+	}
+	
+	for(int j=0;j<n;j++){
+		answer+=arr[j][j];
+		System.out.println(Arrays.toString(arr[j]));
+	}
+			
+        return answer;
     }
   // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
     public static void main(String[] args) {
