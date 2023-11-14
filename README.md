@@ -8,7 +8,7 @@ Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
 str.charAt(i): String -> char<br>
 int n = str.charAt(0): 아스키 -> 10진수 <br>
-int b= (int)pos.charAt(0)-65; //A .0 <br>
+int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
 
 #### 10진수
 48: 0
