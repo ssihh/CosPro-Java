@@ -11,8 +11,8 @@ int n = str.charAt(0): 아스키 -> 10진수 <br>
 int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
 
 #### 10진수
-48: 0    |  49: 1 <br>
-65: A    |  97: a
+48: 0   &nbsp| &nbsp 49: 1 <br>
+65: A   &nbsp| &nbsp 97: a
 
 ### 배열
 int[][] arr = new int[n][n];: 2차원 배열 선언. 양옆에 int[][], 모든 원소 값이 0으로 초기화되어있다.<br>
@@ -27,6 +27,6 @@ str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br>
 Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
 
 #### 좌표
-좌표이동: dx[], dy[], cx, cy, nx, ny  |   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
+좌표이동: dx[], dy[], cx, cy, nx, ny  &nbsp|&nbsp   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
 달팽이 직진 커브: dir=0; dir++;
 
