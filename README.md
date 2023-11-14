@@ -11,7 +11,7 @@ int n = str.charAt(0): 아스키 -> 10진수 <br>
 int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
 
 #### 10진수
-48: 0&nbsp;&nbsp;|&nbsp;49: 1 <br>
+48: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;49: 1 <br>
 65: A   &nbsp;| &nbsp; 97: a
 
 ### 배열
