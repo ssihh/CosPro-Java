@@ -27,6 +27,6 @@ str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br>
 Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
 
 #### 좌표
-좌표이동: dx[], dy[], cx, cy, nx, ny  &nbsp|&nbsp   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
+좌표이동: dx[], dy[], cx, cy, nx, ny  &#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
 달팽이 직진 커브: dir=0; dir++;
 
