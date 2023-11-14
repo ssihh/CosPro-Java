@@ -12,7 +12,7 @@ int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char�
 
 #### 10진수
 48: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;49: 1 <br>
-65: A   &nbsp;| &nbsp; 97: a
+65: A   &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp; 97: a
 
 ### 배열
 int[][] arr = new int[n][n];: 2차원 배열 선언. 양옆에 int[][], 모든 원소 값이 0으로 초기화되어있다.<br>
