@@ -24,6 +24,7 @@ Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자�
 Arrays.sort(arr): 배열정렬<br>
 
 ## 메소드
+str.equals(str): 문자열 같은지 비교할 때. == 말고 eqauls()사용<br>
 str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br> 
 Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
 
