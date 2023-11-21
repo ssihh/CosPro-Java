@@ -35,3 +35,8 @@ Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br
 좌표이동: dx[], dy[], cx, cy, nx, ny  &#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
 달팽이 직진 커브: dir=0; dir++;
 
+####iterator
+1) hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다. <br>
+2) next(): 다음 요소를 가져온다. <br>
+3) remove(): next()로 읽어온 요소를 삭제한다. <br>
+4) hasPrevious(), previous()<br>
