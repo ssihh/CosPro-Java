@@ -3,6 +3,18 @@
 https://school.programmers.co.kr/learn/courses/11132/11132-cos-pro-1급-java-모의고사<br>
 <br>
 
+#### Iterator
+1) hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다. <br>
+2) next(): 다음 요소를 가져온다. <br>
+3) remove(): next()로 읽어온 요소를 삭제한다. <br>
+4) hasPrevious(), previous()<br>
+
+#### HashSet
+1) HashSet<Integer> hashSet = new HashSet<>(); 선언<br>
+Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
+2) hashSet.add(i);
+3) hash.size();
+
 ### 형변환
 Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
@@ -35,13 +47,4 @@ Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br
 좌표이동: dx[], dy[], cx, cy, nx, ny  &#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
 달팽이 직진 커브: dir=0; dir++;
 
-#### Iterator
-1) hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다. <br>
-2) next(): 다음 요소를 가져온다. <br>
-3) remove(): next()로 읽어온 요소를 삭제한다. <br>
-4) hasPrevious(), previous()<br>
 
-#### HashSet
-1) HashSet<Integer> hashSet = new HashSet<>(); 선언<br>
-2) hashSet.add(i);
-3) hash.size();
