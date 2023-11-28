@@ -5,6 +5,7 @@ https://school.programmers.co.kr/learn/courses/11132/11132-cos-pro-1급-java-모
 
 #### Iterator
 1) hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다. <br>
+answer[k++]=(int)iterator.next(); //형변환 필수
 2) next(): 다음 요소를 가져온다. <br>
 3) remove(): next()로 읽어온 요소를 삭제한다. <br>
 4) hasPrevious(), previous()<br>
