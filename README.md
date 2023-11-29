@@ -22,10 +22,11 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 2) answer.append(int) //한글자씩 추가 가능
 
 #### 형변환
-Integer.toString(int): Int -> String혁변환<br>
-Long.toString(long): Long -> String형변환<br>
-Long.parseLong(str): String -> Long<br>
-str.charAt(i): String -> char<br>
+1) Integer.toString(int): Int -> String형변환<br>
+1)
+2) Long.toString(long): Long -> String형변환<br>
+2) Long.parseLong(str): String -> Long<br>
+4) str.charAt(i): String -> char<br>
 int n = str.charAt(0): 아스키 -> 10진수 <br>
 int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
 
