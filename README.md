@@ -12,7 +12,7 @@ answer[k++]=(int)iterator.next(); //형변환 필수
 4) hasPrevious(), previous()<br>
 
 #### HashSet
-1) HashSet<Integer> hashSet = new HashSet<>(); 선언<br>
+1) HashSet <Integer> hashSet = new HashSet<>(); 선언<br>
 Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
 2) hashSet.add(i);
 3) hash.size();
