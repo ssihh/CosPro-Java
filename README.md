@@ -20,7 +20,8 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 #### StringBuilder
 1) StringBuilder answer = new StringBuilder();
 2) answer.append(int) //한글자씩 추가 가능
-
+<br>
+//형변환 링크: https://chobopark.tistory.com/303
 #### 형변환
 1) Integer.toString(int): Int -> String형변환<br>
 1)
