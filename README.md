@@ -21,7 +21,7 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 1) StringBuilder answer = new StringBuilder();
 2) answer.append(int) //한글자씩 추가 가능
 
-### 형변환
+###$ 형변환
 Integer.toString(int): Int -> String혁변환<br>
 Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
@@ -33,11 +33,13 @@ int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char�
 48: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;49: 1 <br>
 65: A   &nbsp;&nbsp;&nbsp;&nbsp;| &nbsp; 97: a
 
-### 배열
+#### 배열
+1) int[][] arr = new int[n][n];: 2차원 배열 선언. 양옆에 int[][], 모든 원소 값이 0으로 초기화되어있다.
+   String[][] str; //파라미터 값
+   str.length //배열 길이 ()안붙여도됨
+3) arr.length: 배열 길이 <br>
+4) arr[i].length(): arr[i]에 있는 문자 길이. 마지막에 ()가 들어간다<br>
 arr.substing(i,i+1): String 끊어읽기. charAt(i)대신 쓰기좋음<br>
-int[][] arr = new int[n][n];: 2차원 배열 선언. 양옆에 int[][], 모든 원소 값이 0으로 초기화되어있다.<br>
-arr.length: 배열 길이 <br>
-arr[i].length(): arr[i]에 있는 문자 길이. 마지막에 ()가 들어간다<br>
 Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자가 출력된다. <br> 
   2차원배열출력: Arrays.toString(arr[0]) 한행씩 가능 <br>
 Arrays.sort(arr): 배열정렬<br>
