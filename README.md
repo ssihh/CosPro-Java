@@ -21,7 +21,7 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 1) StringBuilder answer = new StringBuilder();
 2) answer.append(int) //한글자씩 추가 가능
 
-###$ 형변환
+#### 형변환
 Integer.toString(int): Int -> String혁변환<br>
 Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
