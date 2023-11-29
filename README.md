@@ -16,7 +16,12 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 2) hashSet.add(i);
 3) hash.size();
 
+#### StringBuilder
+1) StringBuilder answer = new StringBuilder();
+2) answer.append(int)
+
 ### 형변환
+Integer.toString(int): Int -> String혁변환<br>
 Long.toString(long): Long -> String형변환<br>
 Long.parseLong(str): String -> Long<br>
 str.charAt(i): String -> char<br>
