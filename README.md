@@ -29,6 +29,7 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 1) Integer.toInt(str): str -> Int<br>
 2) Long.toString(long): Long -> String형변환<br>
 2) Long.parseLong(str): String -> Long<br>
+3) Double.toString(double): double -> String
 4) str.charAt(i): String -> char<br>
 int n = str.charAt(0): 아스키 -> 10진수 <br>
 int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
