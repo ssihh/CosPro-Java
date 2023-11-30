@@ -55,7 +55,8 @@ Arrlist.get(i): 값불러오기. 배열이랑 다름
 ## 메소드
 str.equals(str): 문자열 같은지 비교할 때. == 말고 eqauls()사용<br>
 str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br> 
-Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
+1) Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
+2) Math.abs(): 절대값
 
 #### 좌표
 좌표이동: dx[], dy[], cx, cy, nx, ny  &#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;   nx>-1 && nx<8 && ny>-1 && ny<8 <br>
