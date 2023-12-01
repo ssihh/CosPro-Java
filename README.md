@@ -21,6 +21,7 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 1) str.equals(str): 문자열 같은지 비교할 때. == 말고 eqauls()사용<br>
 2) str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br> 
 3) str += number.charAt(i): str에 char 한문자씩 +가능
+4) str = str.toLowerCase(); str소문자로 변환
 
 #### StringBuilder
 1) StringBuilder answer = new StringBuilder();
