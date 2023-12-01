@@ -54,10 +54,10 @@ arr.substing(i,i+1): String 끊어읽기. charAt(i)대신 쓰기좋음<br>
 Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자가 출력된다. <br> 
   2차원배열출력: Arrays.toString(arr[0]) 한행씩 가능 <br>
 Arrays.sort(arr): 배열정렬<br>
-
 <br>
 //소수prime구하기 링크: https://drcode-devblog.tistory.com/123
 <br>
+
 #### ArrayList
 1) List<Integer> prime = new ArrayList<>(); //<>타입 생략가능
 2) list.add(true); //값 추가
