@@ -32,7 +32,7 @@ Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언
 
 #### 형변환
 1) Integer.toString(int): Int -> String형변환<br>
-1) Integer.toInt(str): str -> Int<br>
+1) Integer.parseInt(str): str -> Int<br>
 2) Long.toString(long): Long -> String형변환<br>
 2) Long.parseLong(str): String -> Long<br>
 3) Double.toString(double): double -> String
