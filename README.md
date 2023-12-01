@@ -49,8 +49,12 @@ Arrays.toString(arr): 배열을 String으로 출력. 안그럼 이상한 문자�
   2차원배열출력: Arrays.toString(arr[0]) 한행씩 가능 <br>
 Arrays.sort(arr): 배열정렬<br>
 
-### ArrayList
-Arrlist.get(i): 값불러오기. 배열이랑 다름
+#### ArrayList
+1) List<Integer> prime = new ArrayList<>(); //<>타입 생략가능
+2) list.add(true); //값 추가
+3) list.set(k, false); // 자리, 세팅값
+4) Arrlist.get(i): 값불러오기. 배열이랑 다름
+5) list.size(): 리스트 길이! length아님
 
 ## 메소드
 str.equals(str): 문자열 같은지 비교할 때. == 말고 eqauls()사용<br>
