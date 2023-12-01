@@ -64,7 +64,7 @@ Arrays.sort(arr): 배열정렬<br>
 ### 메소드
 1) Math.min(arr): 최소값. // Math.min(answer, arr[i]): 이렇게활용가능 <br>
 2) Math.abs(): 절대값
-3) Math.pow(10, 2): 10^2 제곱값
+3) Math.pow(10, 2): 10^2 제곱값<br>
    int n2= (int)Math.pow(prime.get(i), 2); //Math.pow() 반환값 타입은 double 입니다.
 
 #### 좌표
