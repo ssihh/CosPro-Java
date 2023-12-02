@@ -60,7 +60,7 @@ Arrays.sort(arr): 배열정렬<br>
 <br>
 
 #### ArrayList
-1) List<Integer> prime = new ArrayList<>(); //<>타입 생략가능
+1) List<.Integer> prime = new ArrayList<>(); //<>타입 생략가능
 2) list.add(true); //값 추가
 3) list.set(k, false); // 자리, 세팅값
 4) Arrlist.get(i): 값불러오기. 배열이랑 다름
