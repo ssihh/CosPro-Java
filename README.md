@@ -13,9 +13,10 @@ answer[k++]=(int)iterator.next(); //형변환 필수
 
 #### HashSet
 1) HashSet<.Integer> hashSet = new HashSet<>(); 선언<br>
-Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
-2) hashSet.add(i);
-3) hash.size();
+Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언. 타입 지정안하면 나중에 형변환
+Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
+3) hashSet.add(i);
+4) hash.size();
 
 #### String
 1) str.equals(str): 문자열 같은지 비교할 때. == 말고 eqauls()사용<br>
