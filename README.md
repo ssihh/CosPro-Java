@@ -13,7 +13,7 @@ answer[k++]=(int)iterator.next(); //형변환 필수
 
 #### HashSet
 1) HashSet<.Integer> hashSet = new HashSet<>(); 선언<br>
-Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언. 타입 지정안하면 나중에 형변환
+Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언. 타입 지정안하면 나중에 (int)형변환<br>
 Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
 3) hashSet.add(i);
 4) hash.size();
