@@ -1,5 +1,22 @@
 1차 기출(구름)
 
+#### 타임머신 : 형변환
+Long ↔ String 형변환과 str 문자열 추가 += " ", char
+
+        String snum = Long.toString(num);
+        String new_snum = "";	
+			
+        for(int i=0; i<snum.length(); i++){
+                if(snum.charAt(i)=='0'){
+                        new_snum += "1";
+                }
+                else{
+                        new_snum += snum.charAt(i);
+                }
+        }
+        answer = Long.parseLong(new_snum);
+        
+
 #### 해밍거리 
 - str.charAt(i) 문자 같은지 비교할 때
 
