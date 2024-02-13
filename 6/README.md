@@ -1,4 +1,15 @@
 
+#### 인자값 사용
+        for(int i=0; i<n;i++){
+            
+            if(kan + words[i].length() > K){ //상수10 사용하지 말고 인자K를 사용해야합니다.,.
+                answer++;
+                kan=0;
+            }
+            kan += words[i].length() +1;
+            // System.out.print(words[i]+", "+kan+" |");
+        }
+
 #### BFS 좌표기반 탐색
 - while(!q.isEmpty()) : 느낌표! 큐가 비지 않을때까지
 - boolean[][] visited : 방문배열은 부울형
