@@ -3,6 +3,16 @@
 #### 타임머신 : 형변환
 Long ↔ String 형변환과 str 문자열 추가 += " ", char
 
+- s.repalce("0","1")
+
+        long answer = num+=1;
+				String s = Long.toString(num); //long->String형변환
+			  //System.out.print(s.replace("0", "1"));
+				answer=Long.parseLong(s.replace("0", "1")); // 0인거 1로 변환 replace
+        return answer;
+
+내풀이
+
         String snum = Long.toString(num);
         String new_snum = "";	
 			
