@@ -1,7 +1,7 @@
 2차 기출
 <br>
 
-#### length : (X) 배열[ ] | length() : (O) 문자열 길이 String 
+#### length : (X) 배열[ ]   |   length() : (O) 문자열 길이 String 
 1. length<br>
  - arrays(int[], double[], String[])<br>
  - length는 배열의 길이를 알고자 할때 사용된다.<br>
