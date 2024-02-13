@@ -6,7 +6,7 @@
  - arrays(int[], double[], String[])<br>
  - length는 배열의 길이를 알고자 할때 사용된다.<br>
  
-2. length()
+2. length()<br>
  - String related Object(String, StringBuilder etc)<br>
  - length()는 문자열의 길이를 알고자 할때 사용된다.<br>
 출처: https://mine-it-record.tistory.com/126 [나만의 기록들:티스토리]
