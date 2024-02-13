@@ -25,7 +25,7 @@
 #### extends
 - extends Job { 소문자e로 시작 | 뒤에 s | 소괄호 없이 바로 { 붙음
 <br>
-이상해
+
 
     class Solution {
       class Job {
