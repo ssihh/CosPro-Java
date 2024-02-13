@@ -39,6 +39,22 @@
 
 <br>
 
+#### 종이접기 : 2차원 배열
+Q5. 종이접기 (디버깅) - 출처: https://honeywater97.tistory.com/268 <br>
+어느정도 직감으로 푸신분 : k는 항상 j와의 관계를 나타내므로( k는 j+1이기 때문) j와 k의 관계가 고정이다. <br>
+
+        i, j  |  j, i
+        i, k  |  k, i
+        정답에서는 기준좌표를 뒤집었습니다. 하하
+        
+        for(int i = 0; i < 4; i++)
+            for(int j = 0; j < 4; j++)
+                for(int k = j + 1; k < 4; k += 2)
+                    answer = Math.max(answer, Math.max(grid[i][j] + grid[i][k], grid[j][i] + grid[k][i]));
+        return answer;
+
+<br>
+
 #### extends
 - extends Job { 소문자e로 시작 | 뒤에 s | 소괄호 없이 바로 { 붙음
 <br>
