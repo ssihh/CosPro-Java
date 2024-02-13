@@ -8,3 +8,15 @@
 			for(int k=j+1 ; k<arr.length; k++){
 				if((arr[i]+arr[j]+arr[k]) % 3 == 0) answer++;
 			}
+
+#### 2.6 로봇을 움직여 주세요 : Switch Case 구문 생각안나면 더 친숙한 if-else if문으로
+
+	int x=0; int y=0;
+	for(int i=0; i<n; i++ ){
+		// System.out.print(commands.charAt(i));
+		char d = commands.charAt(i);
+		if(d=='L') x--;
+		else if(d=='R') x++;
+		else if(d=='U') y++;
+		else if(d=='D') y--;
+	}
