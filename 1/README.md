@@ -3,8 +3,8 @@
 #### 체스의 나이트 : 형변환 str, char, int
 - str.char형 해서 - '작은따옴표' : int에 할당하면 int 됨.
 
-	int cx =pos.charAt(0)-'A'; // cx: current x좌표 현재좌표
-	int cy =pos.charAt(1)-'1';
+		int cx =pos.charAt(0)-'A'; // cx: current x좌표 현재좌표
+		int cy =pos.charAt(1)-'1';
 
 #### 타임머신 : 형변환
 Long ↔ String 형변환과 str 문자열 추가 += " ", char
