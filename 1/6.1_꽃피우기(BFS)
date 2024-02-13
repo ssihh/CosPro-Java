@@ -1,0 +1,81 @@
+// 다음과 같이 import를 사용할 수 있습니다.
+import java.util.*;
+
+class Solution {
+    
+    
+    public int solution(int[][] garden) {
+        // 여기에 코드를 작성해주세요.
+        int answer = 0;
+        int n = garden.length;//정원길이
+        
+        // 방문배열
+        boolean[][] visited = new boolean[n][n];
+        
+        // 초기화 장미 큐에 넣기
+        Queue<int[]> q = new LinkedList<>();
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                if(garden[i][j]==1){
+                    q.offer(new int[] {i,j});
+                    visited[i][j]=true;
+                }
+            }
+        }
+        
+        //4방향 배열
+        int[] dx = {0,0,-1,1};
+        int[] dy = {-1,1,0,0};
+        
+        while(!q.isEmpty()){ //! 느낌표. 큐가 비지 않을때까지
+            int[] crt = q.poll();
+            int cx = crt[0];
+            int cy = crt[1];
+                                   
+            for(int i=0; i<4; i++){
+                int nx = cx+dx[i]; //다음 x,y값
+                int ny = cy+dy[i];
+                if(nx>=0 && ny>=0 && nx<n && ny<n){ //좌표 유효성 검사
+                    if(garden[nx][ny]==0 && !visited[nx][ny]){
+                        q.offer(new int[] {nx, ny});
+                        visited[nx][ny]=true;
+                        garden[nx][ny]=garden[cx][cy] +1;
+
+                    }
+                }
+            }
+        }
+        
+        for(int i=0; i<n; i++){
+            Arrays.sort(garden[i]);
+            if(answer < garden[i][n-1]){
+                answer = garden[i][n-1] -1;
+            }
+        }
+        
+        
+        
+        return answer;
+    }
+    
+
+    
+    
+    
+    // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[][] garden1 = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
+        int ret1 = sol.solution(garden1);
+        
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println("solution 메소드의 반환 값은 " + ret1 + " 입니다.");
+        
+        int[][] garden2 = {{1, 1}, {1, 1}};
+        int ret2 = sol.solution(garden2);
+        
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println("solution 메소드의 반환 값은 " + ret2 + " 입니다.");
+        
+    }    
+}
