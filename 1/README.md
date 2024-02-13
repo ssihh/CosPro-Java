@@ -1,7 +1,7 @@
 
 #### BFS 좌표기반 탐색
-- while(!q.isEmpty()) : 느낌표!! 큐가 비지 않을때까지
-- boolean[][] visited : 방문배열은 부울형!
+- while(!q.isEmpty()) : 느낌표! 큐가 비지 않을때까지
+- boolean[][] visited : 방문배열은 부울형
 
         while(!q.isEmpty()){ //! 느낌표. 큐가 비지 않을때까지
             int[] crt = q.poll();
@@ -23,8 +23,9 @@
         }
 
 #### extends
-extends Job { 소문자e로 시작 | 뒤에 s | 소괄호 없이 바로 { 붙음
-
+- extends Job { 소문자e로 시작 | 뒤에 s | 소괄호 없이 바로 { 붙음
+<br>
+이상해
 
     class Solution {
       class Job {
