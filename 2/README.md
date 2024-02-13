@@ -2,13 +2,13 @@
 <br>
 
 #### length | length()
-1. length
- - arrays(int[], double[], String[])
- - length는 배열의 길이를 알고자 할때 사용된다.
+1. length<br>
+ - arrays(int[], double[], String[])<br>
+ - length는 배열의 길이를 알고자 할때 사용된다.<br>
  
 2. length()
- - String related Object(String, StringBuilder etc)
- - length()는 문자열의 길이를 알고자 할때 사용된다.
+ - String related Object(String, StringBuilder etc)<br>
+ - length()는 문자열의 길이를 알고자 할때 사용된다.<br>
 출처: https://mine-it-record.tistory.com/126 [나만의 기록들:티스토리]
 
 #### 2.4 합이 K배가 되는 수 : 조합인줄 알았는데 3중 for문으로 가능
