@@ -1,12 +1,17 @@
 1차 기출(구름)
 
-#### 체스의 나이트 : 형변환 str, char, int
-- str.char형 해서 - '작은따옴표' : int에 할당하면 int 됨.
 
-		int cx =pos.charAt(0)-'A'; // cx: current x좌표 현재좌표
-		int cy =pos.charAt(1)-'1';
+#### 1.2 해밍거리 
+- str.charAt(i) 문자 같은지 비교할 때
 
-#### 타임머신 : 형변환
+        for(int i = 0; i < maxLength; i++)
+            if(binaryA.charAt(i)!=binaryB.charAt(i))
+                hammingDistance += 1;
+        return hammingDistance;
+
+<br>
+
+#### 1.4 타임머신 : 형변환
 Long ↔ String 형변환과 str 문자열 추가 += " ", char
 
 - s.repalce("0","1")
@@ -33,15 +38,9 @@ Long ↔ String 형변환과 str 문자열 추가 += " ", char
         answer = Long.parseLong(new_snum);
         
 
-#### 해밍거리 
-- str.charAt(i) 문자 같은지 비교할 때
+<br>
 
-        for(int i = 0; i < maxLength; i++)
-            if(binaryA.charAt(i)!=binaryB.charAt(i))
-                hammingDistance += 1;
-        return hammingDistance;
-
-#### 소용돌이 수
+#### 1.5 소용돌이 수
 풀이 이해 dx, dy 없이 방향 for() if()문 조건으로 함<br>
 2차원 배열로 봤을 때 y는 왼쪽, 오른쪽 x는 아래, 위쪽<br>
 
@@ -67,3 +66,14 @@ Long ↔ String 형변환과 str 문자열 추가 += " ", char
                 else if(d==3) x--;
                 
         }
+
+<br>
+
+#### 1.6 체스의 나이트 : 형변환 str, char, int
+- str.char형 해서 - '작은따옴표' : int에 할당하면 int 됨.
+
+		int cx =pos.charAt(0)-'A'; // cx: current x좌표 현재좌표
+		int cy =pos.charAt(1)-'1';
+
+
+
