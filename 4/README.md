@@ -9,6 +9,8 @@
 #### 4.10 소수의 세제곱이 몇개 : 소수
 - 에라토스테네스의 채
 - Double->Int 형변환(int) : 제곱근 Math.sqrt(b) double형이라 앞에 (int) 붙여주면 형변환됨.
+- N의 제곱근까지만 탐색하는 이유 : 소수 구하기. 218p
+- 소수 판별 함수 : 신기한 소수 찾기. 156p
 
     	public void isPrime(int a, int b){
     		int n= (int)Math.sqrt(b); //범위: b 제곱근 n까지 | double형 -> int형으로 바꾸는건 (int) 달면됨
