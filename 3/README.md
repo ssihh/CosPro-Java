@@ -21,30 +21,31 @@
 - 논리연산자 &&, || 주의: 2미만이면서 8초과인 수는 없으므로 || 으로
 - Iterator<Customer> iter = reserveList.iterator();
 
-    class Shop{
-        protected ArrayList<Customer> reserveList;
-        public Shop() {
-			this.reserveList = new ArrayList<Customer>();
-		}
-        public boolean reserve(Customer customer){
-            reserveList.add(customer);
-            return true;
-        }
-    }
-    class Customer{
-        public int id;
-        public int time;
-        public int numOfPeople;
-        public Customer(int id, int time, int numOfPeople){
-            this.id = id;
-            this.time = time;
-            this.numOfPeople = numOfPeople;
-        }
-    }
-    class Restaurant extends Shop {
-        public Restaurant(){
-            super();
-        }
+
+	    class Shop{
+	        protected ArrayList<Customer> reserveList;
+	        public Shop() {
+				this.reserveList = new ArrayList<Customer>();
+			}
+	        public boolean reserve(Customer customer){
+	            reserveList.add(customer);
+	            return true;
+	        }
+	    }
+	    class Customer{
+	        public int id;
+	        public int time;
+	        public int numOfPeople;
+	        public Customer(int id, int time, int numOfPeople){
+	            this.id = id;
+	            this.time = time;
+	            this.numOfPeople = numOfPeople;
+	        }
+	    }
+	    class Restaurant extends Shop {
+	        public Restaurant(){
+	            super();
+	        }
         
         public boolean reserve(Customer customer){
             if(customer.numOfPeople<2 || customer.numOfPeople>8) //논리연산자 주의
