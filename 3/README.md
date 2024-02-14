@@ -14,8 +14,52 @@
 
         return answer.substring(0,14);
 
-#### 3.10 밥먹고 머리자르고
-논리연산자 &&, || 주의: 2미만이면서 8초과인 수는 없으므로 || 으로 
 
-            if(customer.numOfPeople<2 || customer.numOfPeople>8)
+<br>
+
+#### 3.10 밥먹고 머리자르고 : && || , Iterator
+- 논리연산자 &&, || 주의: 2미만이면서 8초과인 수는 없으므로 || 으로
+- Iterator<Customer> iter = reserveList.iterator();
+
+    class Shop{
+        protected ArrayList<Customer> reserveList;
+        public Shop() {
+			this.reserveList = new ArrayList<Customer>();
+		}
+        public boolean reserve(Customer customer){
+            reserveList.add(customer);
+            return true;
+        }
+    }
+    class Customer{
+        public int id;
+        public int time;
+        public int numOfPeople;
+        public Customer(int id, int time, int numOfPeople){
+            this.id = id;
+            this.time = time;
+            this.numOfPeople = numOfPeople;
+        }
+    }
+    class Restaurant extends Shop {
+        public Restaurant(){
+            super();
+        }
+        
+        public boolean reserve(Customer customer){
+            if(customer.numOfPeople<2 || customer.numOfPeople>8) //논리연산자 주의
                 return false;
+            int count = 0;
+                        
+            Iterator<Customer> iter = reserveList.iterator(); //iterator()
+            while (iter.hasNext()) {
+                Customer r = iter.next(); 
+                if(r.time==customer.time)
+                    count += 1;
+            }
+            if(count >= 2)
+                return false;
+            reserveList.add(customer);
+            return true;
+        }
+    }
