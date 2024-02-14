@@ -1,62 +1,43 @@
-// 다음과 같이 import를 사용할 수 있습니다. 정리 덜됨 ㅎ
+// 다음과 같이 import를 사용할 수 있습니다. 전역변수 사용
 import java.util.*;
 
 class Main {
   
-	public int[] prime;
+	//전역변수
+	public static boolean[] pri;
 	
-	public int[] isPrime(int a, int b){
-		boolean[] pri = new boolean[b/2] ;
+	//pri 부울형에 a,b범위에 한해서 prime인지 true, false 값 넣어줌 
+	public void isPrime(int a, int b){
+		int n= (int)Math.sqrt(b); //범위: b 제곱근 n까지 | double형 -> int형으로 바꾸는건 (int) 달면됨
+		pri = new boolean[n+1]; 
 		
-		for(int i=2; i<b/2 ; i++){
-			pri[i]=true;
-		}
+		for(int i=2; i<=n ; i++)	pri[i]=true;
 			
-		for(int i=2; i<b/2 ;i++){
-			for(int j=i+i; j<b/2; j+=i){
-				pri[j]=false;
+		for(int i=2; i<=n ;i++){
+			for(int j=i+i; j<=n; j+=i){
+				pri[j]=false; //에라토스테네스의 채
 			}
 		}
-		
-		prime = new int[b/2]; 
-		int p=0;
-		for(int i=2; i<b/2; i++){
-			if(pri[i]){
-				prime[p++]=i;
-			}
-		}
-			
-		return prime;
+		// System.out.println(pri[2]);	
 	}
-	
-	public boolean isPrime2(int p){
-		for(int i=0; i<prime.length; i++){
-			if (prime[i]==p){
-				return true;
-			}
-		}
-		return false;
-	}
-	
+
 	public int solution(int a, int b) {
         // 여기에 코드를 작성해주세요.
-		prime = isPrime(a,b);
+		isPrime(a,b);
 		int answer =0;
-		// System.out.println(Math.sqrt(a));		
+	
 		for(int i=2; i<=Math.sqrt(b); i++){
-			if(isPrime2(i)){
-				if(i*i>a && i*i <= b){
+			
+			if(pri[i]){ //pri 부울형 
+				if(i*i>=a && i*i <= b){
 					answer++;
-					// System.out.println(i*i);
 				}
-				if(i*i*i> a && i*i*i <=b){
+				if(i*i*i>= a && i*i*i <=b){
 					answer++;
 				}
 			}
 		}
-		
-    
-		
+
         return answer;
     }
 
