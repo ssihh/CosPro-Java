@@ -13,3 +13,9 @@
 			}
 
         return answer.substring(0,14);
+
+#### 3.10 밥먹고 머리자르고
+논리연산자 &&, || 주의: 2미만이면서 8초과인 수는 없으므로 || 으로 
+
+            if(customer.numOfPeople<2 || customer.numOfPeople>8)
+                return false;
