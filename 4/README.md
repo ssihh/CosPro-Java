@@ -7,3 +7,18 @@
 #### 4.9 분침과 시침의 각도 구하기 : 조건이 부실함
 
 #### 4.10 소수의 세제곱이 몇개 : 소수
+- 에라토스테네스의 채
+- Double->Int 형변환(int) : 제곱근 Math.sqrt(b) double형이라 앞에 (int) 붙여주면 형변환됨.
+
+    	public void isPrime(int a, int b){
+    		int n= (int)Math.sqrt(b); //범위: b 제곱근 n까지 | double형 -> int형으로 바꾸는건 (int) 달면됨
+    		pri = new boolean[n+1]; 
+    		
+    		for(int i=2; i<=n ; i++)	pri[i]=true; 
+    			
+    		for(int i=2; i<=n ;i++){
+    			for(int j=i+i; j<=n; j+=i){
+    				pri[j]=false; //에라토스테네스의 채
+    			}
+    		}
+    	}
