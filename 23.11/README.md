@@ -3,6 +3,9 @@
 #### 2_빈칸. 두개 뽑아서 더하기(해시) : HashSet, Iterator
 문제(프로그래머스): https://school.programmers.co.kr/learn/courses/30/lessons/68644 <br>
 
+1) Set : 중복허용X, 순서보장X | add, contains, delete <br>
+2) HashMap : key : value 저장 | key는 중복이 되지 않음.
+3) HashSet : HashMap의 key값을 활용.
         
 <br>
 
