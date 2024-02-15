@@ -23,6 +23,18 @@
             answer += Integer.toString(max); 
             //탐색완료한 max값 넣어줌 10개숫자중 4개제거위해 6번실행
 
+프로그래머스 시간초과
+1) StringBuilder, append, toString() 으로 수정
+2) charAt-'0'으로 수정. Integer.parseInt(str.substring(i,i+1)) 가 느린가봄
+
+          StringBuilder answer = new StringBuilder();
+          answer.append(max); 
+          return answer.toString();
+
+          int n = number.charAt(j)-'0'; 
+
+
+
 <br>
 
 ####
