@@ -34,13 +34,14 @@ Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator(
 
 #### 형변환
 1) Integer.toString(int): Int -> String형변환<br>
-1) Integer.parseInt(str): str -> Int<br>
-2) Long.toString(long): Long -> String형변환<br>
-2) Long.parseLong(str): String -> Long<br>
-3) Double.toString(double): double -> String
-4) str.charAt(i): String -> char<br>
+2) Integer.parseInt(str): str -> Int<br>
+3) Long.toString(long): Long -> String형변환<br>
+4) Long.parseLong(str): String -> Long<br>
+5) Double.toString(double): double -> String
+6) str.charAt(i): String -> char<br>
 int n = str.charAt(0): 아스키 -> 10진수 <br>
-int a= 8-(pos.charAt(1)-'0'); //7 .1 | int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
+7) int a= 8-(pos.charAt(1)-'0'): char -> int<br>
+   int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
 
 #### 10진수
 48: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;49: 1 <br>
