@@ -53,7 +53,7 @@
             int count = 0;
 
 
-- Iterator<Customer> iter = reserveList.iterator();
+- Iterator<Customer> iter = reserveList.iterator(); : .점 소문자iterator(); 이터레이터 반환
 1) iter.hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다.
 2) iter.next(): 다음 요소를 가져온다.
 
