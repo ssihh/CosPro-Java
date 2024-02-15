@@ -30,7 +30,7 @@
 #### 5.7 그래프에서 싸이클찾기 : 유니온(union) & 파인드(find) 279p
 - 집합 표현하기(Gold 4) 282p
 1) 대표노드 초기화
-2) find 재귀함수 : 대표노드 찾는 함수 | return 조건: 대표노드 자기자신
+2) find 재귀함수 | return 조건 : 대표노드 자기자신 | 대표노드 찾는 함수  
 3) union 합침 : parent[u]=v; 
 
 		    public int find(int[] parent, int u) {
