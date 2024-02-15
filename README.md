@@ -4,7 +4,7 @@
 https://school.programmers.co.kr/learn/courses/11132/11132-cos-pro-1급-java-모의고사<br>
 <br>
 
-#### Iterator_3
+#### Iterator_3, 23.11
 0) Iterator iter = hashSet.iterator();
 1) hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다. <br>
 2) next(): 다음 요소를 가져온다. <br>
@@ -12,7 +12,7 @@ answer[k++]=(int)iterator.next(); //형변환 필수
 3) remove(): next()로 읽어온 요소를 삭제한다. <br>
 4) hasPrevious(), previous()<br>
 
-#### HashSet
+#### HashSet_23.11
 1) HashSet<.Integer> hashSet = new HashSet<>(); 선언<br>
 Iterator iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언. 타입 지정안하면 나중에 (int)형변환<br>
 Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator()선언 
