@@ -71,4 +71,19 @@
 
 
 #### 9_구현. 모음사전 : 재귀함수
-문제(프로그래머스): https://school.programmers.co.kr/learn/courses/30/lessons/84512
+문제(프로그래머스): https://school.programmers.co.kr/learn/courses/30/lessons/84512 
+- import java.util.*; : 이유모를 에러뜨면 임포트
+- ArrayList.get(i) : 어레이리스트는 get(i)로 값 가져옴. 겟아이
+- str.equals(str) : 문자열 비교는 이퀄스
+
+        import java.util.*; // 이유모를 에러뜨면 import 해보자
+
+            ArrayList<String> sazon = new ArrayList<>(); //List 인터페이스를 구현한 클래스이기 때문에 저장된 값의 순서를 유지하고 중복을 허용한다. 
+
+                if(len<5){
+                DFS(len+1, str.concat(alpha[i]));
+
+            if(word.equals(sazon.get(i))){ //i번째 값에 넣어주고
+                answer = i;
+                break;
+            
