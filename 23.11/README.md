@@ -6,6 +6,19 @@
 1) Set : 중복허용X, 순서보장X | add, contains, delete <br>
 2) HashMap : key : value 저장 | key는 중복이 되지 않음.
 3) HashSet : HashMap의 key값을 활용.
+
+        HashSet<Integer> hs = new HashSet<>(); //new HashSet<>();
+        for(int i=0; i<n-1; i++){
+            for(int j=i+1; j<n; j++){
+                hs.add(numbers[i]+numbers[j]); //hs.add()
+            }       }
+        Iterator<Integer> iter = hs.iterator(); //hs.itertor(); <Integer> 해도되고 안해도되고
+        answer = new int[hs.size()]; //hs.size(); answer 크기 초기화 해줘야 오류 안남
+        
+        int c=0;
+        while(iter.hasNext()){ //iter.hasNext()
+            answer[c++]=iter.next();  //iter.next()
+        }
         
 <br>
 
