@@ -32,7 +32,7 @@ class Solution {
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다.
     public static void main(String[] args) {
         Solution sol = new Solution();
-        // int[] arr = {9, 11, 9, 6, 4, 19};
+        // int[] arr = {9, 11, 9, 6, 4, 19}; //원래 예제 19
         int[] arr = {9, 11, 9, 6, 4, 12}; //4 6 9 9 11 12
         int K = 4;
         int ret = sol.solution(arr, K);
