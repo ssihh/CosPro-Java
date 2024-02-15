@@ -12,7 +12,7 @@
             for(int j=i+1; j<n; j++){
                 hs.add(numbers[i]+numbers[j]); //hs.add()
             }       }
-        Iterator<Integer> iter = hs.iterator(); //hs.itertor(); <Integer> 해도되고 안해도되고
+        Iterator<Integer> iter = hs.iterator(); //hs.itertor(); <Integer> 해줘야 answer 넣어줄때 (int) 안붙여도 오류안남.
         answer = new int[hs.size()]; //hs.size(); answer 크기 초기화 해줘야 오류 안남
         
         int c=0;
