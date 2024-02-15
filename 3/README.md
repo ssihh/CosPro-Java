@@ -17,9 +17,9 @@
 
 <br>
 
-#### 3.10 밥먹고 머리자르고 : && || , Iterator
+#### 3.10 밥먹고 머리자르고 : && || , Iterator (이터레이터, iterat : 순환하다, 반복하다)
 - 논리연산자 &&, || 주의: 2미만이면서 8초과인 수는 없으므로 || 으로
-- Iterator<Customer> iter = reserveList.iterator();
+
 
 
 	    class Shop{
@@ -51,16 +51,16 @@
             if(customer.numOfPeople<2 || customer.numOfPeople>8) //논리연산자 주의
                 return false;
             int count = 0;
-                        
+
+
+- Iterator<Customer> iter = reserveList.iterator();
+1) iter.hasNext(): 다음 요소에 읽어 올 요소가 있는지 확인 하는 메소드 있으면 true, 없으면 false 를 반환한다.
+2) iter.next(): 다음 요소를 가져온다.
+
             Iterator<Customer> iter = reserveList.iterator(); //iterator()
             while (iter.hasNext()) {
                 Customer r = iter.next(); 
                 if(r.time==customer.time)
                     count += 1;
             }
-            if(count >= 2)
-                return false;
-            reserveList.add(customer);
-            return true;
-        }
-    }
+
