@@ -57,7 +57,7 @@
 		
 		        int[] parent = new int[n+1];
 		        for(int i = 1; i <= n; i++)
-		            parent[i]=i;
+		            parent[i]=i; //1) 대표노드 자기자신으로 초기화
 
 
 
