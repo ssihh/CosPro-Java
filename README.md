@@ -24,6 +24,7 @@ Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator(
 2) str.replace("0","1"): str중 "0"을 문자를 "1"로 변환<br> 
 3) str += number.charAt(i): str에 char 한문자씩 +가능
 4) str = str.toLowerCase(); str소문자로 변환
+5) str = String.format("%.1f", gakdo); 소수점 1번째 자리까지만 표시
 
 #### StringBuilder
 1) StringBuilder answer = new StringBuilder();
@@ -40,8 +41,10 @@ Iterator<.Integer> iterator = hashset.iterator(); //hashset.에 쓰일 Iterator(
 5) Double.toString(double): double -> String
 6) str.charAt(i): String -> char<br>
 int n = str.charAt(0): 아스키 -> 10진수 <br>
-7) int a= 8-(pos.charAt(1)-'0'): char -> int<br>
+7) int a= 8-(pos.charAt(1)-'0'): char -> Int<br>
    int b= pos.charAt(0)-'A'; //A .0 : char형을 int선언한거에 대입
+8) (int)Math.sqrt(b): Double -> Int<br>
+   제곱근 double형을 앞에 (int) 붙여줘서 형변환
 
 #### 10진수
 48: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;49: 1 <br>
