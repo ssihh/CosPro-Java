@@ -29,6 +29,36 @@
 
 #### 5.7 그래프에서 싸이클찾기 : 유니온(union) & 파인드(find) 279p
 - 집합 표현하기(Gold 4) 282p
+  1) 대표노드 초기화
+  2) find 재귀함수 : 대표노드 찾는 함수
+  3) union 합침 : parent[u]=v; 
+
+		    public int find(int[] parent, int u) {
+		        if(u == parent[u])
+		            return u;
+		
+		        parent[u] = find(parent, parent[u]); //대표노드를 찾는 find 재귀함수
+		        return parent[u];
+		    }
+		
+		    public boolean merge(int[] parent, int u, int v) {
+		        u = find(parent, u); //각 노드의 대표노드 find
+		        v = find(parent, v); 
+		
+		        if(u == v) //[2]: 3 == [3]: 3 대표노드가 같으면 true
+		            return true;
+		
+		        parent[u]=v; //[1]: 2 , [2]: 3 대표노드끼리 연결하기 union=merge
+		        return false;
+		    }
+		
+		    public int solution(int n, int[][] connections) {
+		        int answer = 0;
+		
+		        int[] parent = new int[n+1];
+		        for(int i = 1; i <= n; i++)
+		            parent[i]=i;
+
 
 
 #### 5.9 몇번 연산을 해야하나요 : 큐(Queue) 
