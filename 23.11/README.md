@@ -63,3 +63,7 @@
 
 #### 8_구현. 호텔대실 : 시간
 문제(프로그래머스): https://school.programmers.co.kr/learn/courses/30/lessons/155651#
+- 시간을 분으로 바꿔주고, 분마다 room++;
+
+        Arrays.sort(room); //Arrays.sort(arr)쓰려면 class 보다 상위에 import 필요
+        answer=room[room.length -1];
