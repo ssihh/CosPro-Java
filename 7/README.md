@@ -1,6 +1,7 @@
 기출추천 백준
 
 #### 1. 토마토 : BFS
+문제(백준): https://www.acmicpc.net/problem/7576 <br>
 1) while문 조건 논리연산자 : && 일때 둘다 참이어야 실행한다는 뜻 하나라도 참이 아니면 실행 안함
 
 		while(!q.isEmpty() && t0 !=0 ) {
