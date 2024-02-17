@@ -43,6 +43,7 @@ Long ↔ String 형변환과 str 문자열 추가 += " ", char
 #### 1.5 소용돌이 수
 풀이 이해 dx, dy 없이 방향 for() if()문 조건으로 함<br>
 2차원 배열로 봤을 때 y는 왼쪽, 오른쪽 x는 아래, 위쪽<br>
+- re: for 문 한번만 쓰임 방향대로 for문 필요없음
 
         int[][] map = new int[n][n];
         boolean[][] visited = new boolean[n][n];
